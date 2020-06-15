@@ -1,22 +1,25 @@
 import React from "react";
-import Logo from "../../img/logo.png";
 import "../../style/Header.scss";
+
+import headerDog from "../../img/header-dog.png";
+import headerPackage from "../../img/header-package.png";
 
 export default function Header() {
   return (
     <div className="header">
-      <figure className="header__logo">
-        <img src={Logo} alt="" />
-      </figure>
+      <img src={headerPackage} alt="package" className="header__package" />
 
-      <nav className="header__nav">
-        <ul className="header__nav_list">
-          <li className="header__nav_list-item">SHOP FOR DOG</li>
-          <li className="header__nav_list-item">SHOP FOR CAT</li>
-          <li className="header__nav_list-item">OUR STORY</li>
-          <li className="header__nav_list-item">CONTACT US</li>
-        </ul>
-      </nav>
+      <div className="header__text">
+        <h3 className="header__text-sub-title">
+          Help your Dog Maintain <br /> a{" "}
+          <span className="blue-text">Healthier Weight</span> with
+        </h3>
+        <h3 className="header__text-title">
+          100% Organic <br /> Pet Food
+        </h3>
+      </div>
+
+      <img src={headerDog} alt="dog" className="header__dog" />
     </div>
   );
 }
