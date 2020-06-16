@@ -18,11 +18,11 @@
 
     &-sub-title {
       font-family: "Amatic SC", cursive;
-      font-size: 30px;
+      font-size: 35px;
       font-weight: 400;
 
       .blue-text {
-        color: rgb(0, 113, 166);
+        color: rgb(0, 114, 168);
         font-weight: 700;
       }
     }
@@ -31,10 +31,26 @@
       text-align: center;
       font-size: 60px;
       font-family: "Amatic SC", cursive;
-      color: rgb(0, 113, 166);
+      color: rgb(0, 114, 168);
       font-weight: 700;
       transform: rotate(-15deg);
       margin-top: 130px;
+
+      &::after {
+        content: url(../img/after-title.png);
+        position: absolute;
+        left: -100px;
+        bottom: -120px;
+        transform: rotate(15deg);
+      }
+
+      &::before {
+        content: url(../img/triangles.png);
+        position: absolute;
+        left: -130px;
+        bottom: 30px;
+        transform: rotate(15deg);
+      }
     }
   }
 

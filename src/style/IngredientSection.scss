@@ -1,0 +1,109 @@
+.ingredient {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper-chicken {
+    background: url(../img/chicken.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    &::before {
+      content: url(../img/storySection-triangles.png);
+      position: absolute;
+      left: 50px;
+    }
+
+    &_title {
+      color: #ffffff;
+      margin-top: 80px;
+      text-transform: uppercase;
+      font-size: 28px;
+      text-align: center;
+      font-family: "Amatic SC", cursive;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+      word-spacing: 1.2px;
+    }
+
+    &_title span {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 40px;
+    }
+
+    &_text {
+      color: #ffffff;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      width: 830px;
+      font-size: 21px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 200;
+      line-height: 1.6;
+    }
+  }
+
+  &__about-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::after {
+      content: url(../img/ingredientSection-triangles.png);
+      position: absolute;
+      right: 20%;
+      top: 100px;
+    }
+
+    &_text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+
+      & span {
+        font-size: 21px;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(0, 0, 0);
+        line-height: 1.6;
+        text-align: left;
+        width: 620px;
+        margin-top: 40px;
+      }
+
+      & h3 {
+        font-size: 54px;
+        font-family: "Amatic SC", cursive;
+        color: rgb(69, 42, 49);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.231;
+      }
+
+      &-btn {
+        margin-top: 50px;
+      }
+    }
+  }
+
+  &__about-product img {
+    margin-top: 90px;
+    margin-left: 100px;
+  }
+}
+
+.btn {
+  width: 160px;
+  height: 50px;
+  background: rgb(46, 162, 208);
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
