@@ -106,4 +106,10 @@
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  outline: none;
+
+  &:active {
+    transform: translate3d(2px, 2px, 0);
+  }
 }

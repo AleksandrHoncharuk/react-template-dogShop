@@ -1,0 +1,22 @@
+.breeds {
+  display: flex;
+  margin-top: 150px;
+  background-color: rgb(240, 240, 240);
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0px 60px 0px;
+
+  &__search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.breeds img {
+  position: absolute;
+}
