@@ -11,10 +11,21 @@ export default function Navigation() {
 
       <nav className="navigation__nav">
         <ul className="navigation__nav_list">
-          <li className="navigation__nav_list-item">SHOP FOR DOG</li>
-          <li className="navigation__nav_list-item">SHOP FOR CAT</li>
-          <li className="navigation__nav_list-item">OUR STORY</li>
-          <li className="navigation__nav_list-item">CONTACT US</li>
+          <li className="navigation__nav_list-item">
+            <a href="">SHOP FOR DOG</a>
+          </li>
+
+          <li className="navigation__nav_list-item">
+            <a href="">SHOP FOR CAT</a>
+          </li>
+
+          <li className="navigation__nav_list-item">
+            <a href="">OUR STORY</a>
+          </li>
+
+          <li className="navigation__nav_list-item">
+            <a href="">CONTACT US</a>
+          </li>
         </ul>
       </nav>
     </div>

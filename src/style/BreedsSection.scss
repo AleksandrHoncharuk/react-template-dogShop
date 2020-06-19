@@ -4,19 +4,92 @@
   background-color: rgb(240, 240, 240);
   justify-content: space-around;
   align-items: center;
-  padding: 100px 0px 60px 0px;
+  padding: 80px 0px 50px 0px;
+  position: relative;
 
   &__search {
     display: flex;
     flex-direction: column;
+
+    & h3 {
+      font-size: 33.333px;
+      color: rgb(76, 38, 46);
+      text-transform: uppercase;
+      line-height: 1.375;
+      font-family: "Amatic SC", cursive;
+      word-spacing: 3px;
+    }
+
+    &_input-wrapper {
+      display: flex;
+      margin-top: 45px;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px solid rgb(128, 128, 128);
+
+      & input {
+        font-size: 17px;
+        font-family: "Montserrat", sans-serif;
+        color: rgb(59, 59, 59);
+        line-height: 1.6;
+        background-color: rgb(240, 240, 240);
+        width: 100%;
+        outline: none;
+      }
+
+      .search-icon_ellipse {
+        border: 1px solid rgb(128, 128, 128);
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        margin-right: 2px;
+      }
+
+      .search-icon_shape {
+        width: 6px;
+        height: 1px;
+        background-color: rgb(128, 128, 128);
+        transform: rotate(45deg);
+        position: absolute;
+        right: -1px;
+        bottom: 6.5px;
+      }
+    }
+
+    & button {
+      margin-top: 50px;
+      width: 200px;
+    }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
+
+    &_title {
+      font-size: 33.333px;
+      color: rgb(76, 38, 46);
+      text-transform: uppercase;
+      line-height: 1.375;
+      font-family: "Amatic SC", cursive;
+    }
+
+    & span {
+      font-size: 15px;
+      width: 392px;
+      color: rgb(59, 59, 59);
+      line-height: 1.25;
+      font-family: "Montserrat", sans-serif;
+      margin-top: 45px;
+    }
+
+    & button {
+      margin-top: 50px;
+    }
   }
 }
 
 .breeds img {
   position: absolute;
+  bottom: -80px;
 }

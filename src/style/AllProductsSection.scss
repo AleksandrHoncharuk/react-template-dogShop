@@ -1,0 +1,39 @@
+.all-products {
+  display: flex;
+  justify-content: center;
+  padding: 115px 0 115px 0;
+
+  & img {
+    height: 360px;
+    margin-top: 20px;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    margin-right: 200px;
+
+    & h3 {
+      font-size: 33.333px;
+      color: rgb(76, 38, 46);
+      text-transform: uppercase;
+      line-height: 1.375;
+      font-family: "Amatic SC", cursive;
+    }
+
+    & span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      color: rgb(59, 59, 59);
+      line-height: 1.25;
+      width: 537px;
+      margin-top: 40px;
+    }
+
+    & button {
+      margin-top: 35px;
+      width: 215px;
+    }
+  }
+}

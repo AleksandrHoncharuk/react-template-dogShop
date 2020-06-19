@@ -22,9 +22,12 @@
       &-item {
         width: max-content;
         margin: 0 30px;
-        font-family: "Open Sans", sans-serif;
-        font-size: 15px;
-        color: #ffffff;
+
+        & a {
+          font-family: "Open Sans", sans-serif;
+          font-size: 15px;
+          color: #ffffff;
+        }
       }
     }
   }
